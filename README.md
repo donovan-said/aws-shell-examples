@@ -1,2 +1,8 @@
-# aws-shell-examples
-A repository to create examples and play around with Shell scripts.
+# Shell Script Examples
+
+- [Overview](#overview)
+- [How to Contribute to this repository](./CONTRIBUTING.md)
+
+# Overview
+
+A repository to store examples of Shell scripts.
