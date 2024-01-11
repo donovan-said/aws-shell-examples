@@ -1,0 +1,15 @@
+[Unit]
+Description=Example Application Service
+Documentation=https://github.com/donovan-said/aws-cli-examples
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Environment=NODE_VERSION={INSERT_NODE_VERSION} <- Set via NVM
+WorkingDirectory=/usr/local/bin/app
+ExecStart=/bin/bash -c "exec $HOME/.nvm/nvm-exec node /usr/local/bin/app/main.js"
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
